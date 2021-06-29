@@ -1,0 +1,120 @@
+
+ 
+<!DOCTYPE html>
+<html>
+    <head>
+        
+     <meta charset="UTF-8">
+     <script src="skripty/login.js"></script>
+     <link rel = "stylesheet" type="text/css" href="css/style_uvod.css">
+     
+     
+
+    </head>
+    <body>
+        
+        <section>
+            <head>
+                    <h1 id="name_web">Animal</h1>
+                    
+                      
+                    <ul id="uvod_"> 
+                        <li id="menu"><a href="#uvod">Úvod</a></li>
+                        <li id="menu"><a href="#uvod">Příspěvek</a></li>
+                        <li id="menu"><a href="#diskuze">Diskuze</a></li>
+                         <li id="menu"><a href="#druhy">Druhy</a></li>
+                        <li id="menu"><a href="#rady_a_porady">Rady</a></li>
+                        
+                        <button id="btn" onclick="document.getElementById('js_close').style.display='block'">Přihlásit</button>
+                        
+                        
+                    </ul>
+
+                        
+                    
+                    <!--Formulář pro logovací systém-->
+                    <div id="js_close" class="modal">
+                        
+                      
+            
+                        <form class="modal-content animate" action="/action_page.php">
+                            <div class="imgcontainer">
+                            <span onclick="document.getElementById('js_close').style.display='none'" class="close" title="Close Modal">&times;</span>
+                          </div>
+                      
+                          <div class="container" style="background-color: rgb(230, 144, 16);">
+                            <label for="uname"><b>Uživatelské jméno</b></label>
+                            <input type="text" placeholder="Uživatelské jméno...." name="username" required>
+                      
+                            <label for="psw"><b>Heslo</b></label>
+                            <input type="password" placeholder="Heslo...." name="password" required>
+                      
+                            <button class="btn_login" type="submit">Login</button>
+                            <label>
+                              <input type="checkbox" checked="checked" name="remember"> Pamatovat si
+                            </label>
+                          </div>
+                      
+                          <div class="container" style="background-color:#171717">
+                            <button type="button" onclick="document.getElementById('js_close').style.display='none'" class="cancelbtn">Cancel</button>
+                            <button type="button" class="btn_register">Registrovat</button>
+                            <span class="psw">Zapomenuté <a href="#">heslo</a></span>
+                          </div>
+                        </form>
+                      </div>
+
+                    <!--Formulář pro logovací systém-->
+
+
+
+
+
+
+
+                    
+
+            </head>
+            <article class="animalstory">
+                
+                   <img src="zelva.jpg" alt="zelva.jpg" width="500" height="400" id="zelva">
+                   <div id="story_text">
+                        <h1 id="animal_story">Zvířecí příběhy</h1>
+                        <p id="vetastory">Přečtěte si ty nejzajímavější příbehy zvířat, které jen tak nepotkáte.</p>
+                     </div> 
+            </article>
+            <article class="o_nas">
+                    
+                <img src="ptak.jpg" alt="ptak_leti" width="500" height="400" id="ptak" >
+                <div id="onastext">
+                        <h2 id="nadpis_onas" id="ptak">O nás</h2>
+                        <p id="veta_onas" id="ptak">Jsme organizace, která chce ukázat světu že i zvířata nám mohou být rovní. Nejsme na světě sami a proto je potřeba vědět ským zde máme tu čest. Jsou to obojživelníci, masožravci, bíložravci a další pozoruhodné druhy. </p>
+                </div>
+                
+                
+                
+            </article>
+            <footer>
+                    <ul id="ul_menu" >
+                    <li id="t"><a href="#o_nas1s" id="menu_f">O nás</a></li>
+                    <li id="t"><a href="#podminky" id="menu_f">Obchodní podmínky</a></li>
+                    <li id="t"><a href="#ochrana" id="menu_f">Zásady zpracování osobních údajů</a></li>
+                    <li id="t"><a href="#Redaktory" id="menu_f">Redaktoři</a></li>
+                    </ul>
+                </footer>    
+            
+
+        </section>
+        
+    </body>
+</html>
+
+<script type="text/javascript">
+
+var modal = document.getElementById('js_close');
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
